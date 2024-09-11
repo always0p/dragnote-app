@@ -49,7 +49,7 @@ const Card = ({ todo, reference }) => {
                 disabled={!isEditable}
             />
 
-            <div className='mt-8 flex justify-between text-red-500'>
+            <div className='mt-8 flex justify-between text-red-500 cursor-pointer'>
                 <div onClick={edit}>
                     {isEditable ? <IoMdSave size={'1.5rem'} /> : <AiFillEdit size={'1.5em'} />}
                 </div>
@@ -57,7 +57,7 @@ const Card = ({ todo, reference }) => {
                 <div>
                     <IoMdClose
                         size={'1.5em'}
-                        onClick={() => deleteTodo(todo.id)}
+                         onClick={() => deleteTodo(todo.id)}
                     />
                 </div>
             </div>
